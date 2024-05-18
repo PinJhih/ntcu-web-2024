@@ -1,17 +1,22 @@
 var express = require("express");
 var router = express.Router();
 
-var users = require("../models/user");
+var records = require("../models/records");
 
 router.get("/", function (_, res) {
     res.render("index", { title: "NTCU Web Programming" });
 });
 
-router.all("/action", function (req, res) {
-    let id = req.params.stu_id;
-    let name = req.params.name;
-    console.log(id, name);
-    res.send("<h1>OK</h1>");
+router.all("/action", async function (req, res) {
+    let id = req.query.stu_id;
+    let name = req.query.name;
+    records.addRecord(id, name);
+    res.end("<h1>OK</h1>");
+})
+
+router.get("/records", async function (_, res) {
+    let allRecords = await records.getRecords();
+    res.json(allRecords);
 })
 
 module.exports = router;
