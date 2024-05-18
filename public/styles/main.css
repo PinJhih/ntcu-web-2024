@@ -7,22 +7,24 @@ body {
 main {
   padding: 40px;
   height: 100%;
+  color: whitesmoke;
 }
 
 img {
-  height: 300px;
+  height: 200px;
   margin: auto;
   display: block;
 }
 
 .card {
-  background-color: whitesmoke;
   padding: 8px;
   margin: 8px 16px;
   margin-left: 0;
   border-radius: 8px;
   width: 30%;
   display: inline-block;
+  color: black;
+  background-color: whitesmoke;
 }
 
 .card.card:hover {
@@ -33,5 +35,4 @@ img {
 
 #page_title {
   font-size: 32pt;
-  color: whitesmoke;
 }
