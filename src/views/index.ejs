@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link href="/public/styles/main.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <main>
-      <h1><%= title %></h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link href="/public/styles/main.css" rel="stylesheet" />
+</head>
 
-      <h3>Hello, <%- username %>!</h3>
-    </main>
-  </body>
+<body>
+  <main>
+    <h1 id="page_title">
+      <%= title %>
+    </h1>
+
+    <div class="card">
+      <h2>Form Example</h2>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png">
+    </div>
+
+    <div class="card">
+      <h2>View Database</h2>
+      <img src="https://www.kindpng.com/picc/m/394-3944421_google-cloud-sql-logo-hd-png-download.png">
+    </div>
+
+    <div class="card">
+      <h2>View Source Code</h2>
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+    </div>
+  </main>
+</body>
+
 </html>
