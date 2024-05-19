@@ -11,7 +11,7 @@ router.all("/action", async function (req, res) {
     let id = req.query.stu_id;
     let name = req.query.name;
     records.addRecord(id, name);
-    res.end("<h1>OK</h1>");
+    res.render("submit", { name: name })
 })
 
 router.get("/records", async function (_, res) {
