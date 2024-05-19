@@ -4,7 +4,7 @@ WORKDIR /app
 COPY . /app
 
 RUN npm install
-RUN mkdir -p data
+RUN mkdir -p /app/data
 
 EXPOSE 3000
 
