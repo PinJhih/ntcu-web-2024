@@ -10,28 +10,20 @@ main {
   color: whitesmoke;
 }
 
-img {
-  height: 200px;
-  margin: auto;
-  display: block;
-}
-
 .card {
   padding: 8px;
   margin: 8px 16px;
   margin-left: 0;
   border-radius: 8px;
-  width: 30%;
-  display: inline-block;
+  width: 100%;
   color: black;
   background-color: whitesmoke;
 }
 
-.card.card:hover {
-  transition: all 0.2s ease;
-  transform: scale(1.02);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
+.card>* {
+  font-size: larger;
+  display: inline-block;
+  width: 33%;
 }
 
 #page_title {

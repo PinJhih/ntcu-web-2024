@@ -16,7 +16,7 @@ router.all("/action", async function (req, res) {
 
 router.get("/records", async function (_, res) {
     let allRecords = await records.getRecords();
-    res.json(allRecords);
+    res.render("records", { records: allRecords });
 })
 
 module.exports = router;

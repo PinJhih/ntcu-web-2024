@@ -7,7 +7,7 @@ function addRecord(id, name) {
 }
 
 async function getRecords() {
-  let sql = `SELECT * FROM record`;
+  let sql = `SELECT * FROM record ORDER BY id DESC`;
   let records = db.query(sql);
   return records;
 }
