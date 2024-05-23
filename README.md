@@ -24,3 +24,7 @@ npm install
 ```
 npm start
 ```
+
+## Cloud Run URL
+
+- https://ntcu-web-2024-74cspp6ywa-uc.a.run.app/
