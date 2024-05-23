@@ -1,6 +1,6 @@
 const sqlite3 = require("sqlite3").verbose();
 const fs = require("fs");
-const filePath = __dirname + "/../../data/ntcu-web.db";
+const filePath = __dirname + "/../../ntcu-web.db";
 
 let fsIsReady = false;
 
